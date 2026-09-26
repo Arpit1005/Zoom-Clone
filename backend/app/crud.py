@@ -35,7 +35,7 @@ def build_invite_link(meeting_id: str, passcode: str) -> str:
     # URL-encode the passcode just in case it contains special characters like + or &
     encoded_pwd = urllib.parse.quote(passcode)
     
-    return f"https://app.local/join/{clean_id}?pwd={encoded_pwd}"
+    return f"https://zoom-clone-azure-three.vercel.app/join/{clean_id}?pwd={encoded_pwd}"
 
 
 def normalize_meeting_id(meeting_id: str) -> str:
